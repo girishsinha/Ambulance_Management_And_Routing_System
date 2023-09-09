@@ -1,0 +1,109 @@
+*{
+    
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Assistant', sans-serif;
+}
+h1{
+    font-family: 'Lato', sans-serif; 
+    text-align: center;
+}
+.man{
+    width: 1000px;
+}
+body{
+   display: flex;
+    background-color: #F3F2F0;
+}
+.container{
+    margin: 10px;
+    padding: 10px;
+    width:900px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+}
+#img{
+    align-self: center;
+    width:856px;
+    height:639px;
+    /* height:855px; */
+    box-shadow: 3px 3px 11px #cecece;
+
+}
+#img:active{
+    cursor: pointer;
+}
+#btn{
+    width: 100px;
+    padding: 5px;
+    margin: auto;
+    border: none;
+    background-color:blue;
+    color: white;
+    display: none;
+}
+.section2{
+    width:900px;
+    height:25rem;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    
+}
+.card{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction:column;
+    margin: 10px;
+    padding: 10px;
+    min-height: 20rem;
+    width: 15rem;
+    border:1px solid#DEDEDC ;
+    border-radius: 10px;
+    box-shadow: 3px 3px 11px #cecece;
+    
+}
+.card img{
+    align-self: center;
+    margin: 10px;
+    width: 100px;
+}
+.vl {
+    
+    border-left: 3px dashed  green;
+    height: 30px;
+    margin-left: 3px;
+  }
+  .vl p{
+    margin: 2px;
+  }
+
+/* .card{
+    background-color: #FFFFFF;
+    margin: 10px;
+    padding: 10px;
+    width: 20;
+    height: 30vh;
+    
+} */
+.sideBar{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction:column;
+    margin: 10px;
+    padding: 10px;
+    border:1px solid#DEDEDC ;
+    border-radius: 10px;
+    box-shadow: 3px 3px 11px #cecece;
+}
+.table{
+    margin: 10px;
+    padding: 10px;
+}
+td{
+    text-align: center;
+}

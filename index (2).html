@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Request System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Lato&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<body>
+
+
+    <div class="man">
+        <h1>Ambulance Management & Routing System</h1>
+        <div class="container">
+            <img src="Img.png" id="img" alt="Workplace" usemap="#workmap">
+            <map name="workmap">
+
+                <area shape="rect" class="A1" coords="0,0,107,71" alt="1" onclick="requestAmbulance(1)">
+                <area shape="rect" class="A1" coords="107,0,214,71" alt="2" onclick="requestAmbulance(2)">
+                <area shape="rect" class="A1" coords="214,0,321,71" alt="3" onclick="requestAmbulance(3)">
+                <area shape="rect" class="A1" coords="321,0,428,71" alt="4" onclick="requestAmbulance(4)">
+                <area shape="rect" class="A1" coords="428,0,535,71" alt="5" onclick="requestAmbulance(5)">
+                <area shape="rect" class="A1" coords="535,0,642,71" alt="6" onclick="requestAmbulance(6)">
+                <area shape="rect" class="A1" coords="642,0,749,71" alt="7" onclick="requestAmbulance(7)">
+                <area shape="rect" class="A1" coords="749,0,856,71" alt="8" onclick="requestAmbulance(8)">
+                <area shape="rect" class="A1" coords="856,0,963,71" alt="9" onclick="requestAmbulance(9)">
+                <area shape="rect" class="A1" coords="963,0,1070,71" alt="10" onclick="requestAmbulance(10)">
+                <area shape="rect" class="A1" coords="1070,0,1177,71" alt="11" onclick="requestAmbulance(11)">
+                <area shape="rect" class="A1" coords="0,71,107,142" alt="12" onclick="requestAmbulance(12)">
+                <area shape="rect" class="A1" coords="107,71,214,142" alt="13" onclick="requestAmbulance(13)">
+                <area shape="rect" class="A1" coords="214,71,321,142" alt="14" onclick="requestAmbulance(14)">
+                <area shape="rect" class="A1" coords="321,71,428,142" alt="15" onclick="requestAmbulance(15)">
+                <area shape="rect" class="A1" coords="428,71,535,142" alt="16" onclick="requestAmbulance(16)">
+                <area shape="rect" class="A1" coords="535,71,642,142" alt="17" onclick="requestAmbulance(17)">
+                <area shape="rect" class="A1" coords="642,71,749,142" alt="18" onclick="requestAmbulance(18)">
+                <area shape="rect" class="A1" coords="749,71,856,142" alt="19" onclick="requestAmbulance(19)">
+                <area shape="rect" class="A1" coords="856,71,963,142" alt="20" onclick="requestAmbulance(20)">
+                <area shape="rect" class="A1" coords="963,71,1070,142" alt="21" onclick="requestAmbulance(21)">
+                <area shape="rect" class="A1" coords="1070,71,1177,142" alt="22" onclick="requestAmbulance(22)">
+                <area shape="rect" class="A1" coords="0,142,107,213" alt="23" onclick="requestAmbulance(23)">
+                <area shape="rect" class="A1" coords="107,142,214,213" alt="24" onclick="requestAmbulance(24)">
+                <area shape="rect" class="A1" coords="214,142,321,213" alt="25" onclick="requestAmbulance(25)">
+                <area shape="rect" class="A1" coords="321,142,428,213" alt="26" onclick="requestAmbulance(26)">
+                <area shape="rect" class="A1" coords="428,142,535,213" alt="27" onclick="requestAmbulance(27)">
+                <area shape="rect" class="A1" coords="535,142,642,213" alt="28" onclick="requestAmbulance(28)">
+                <area shape="rect" class="A1" coords="642,142,749,213" alt="29" onclick="requestAmbulance(29)">
+                <area shape="rect" class="A1" coords="749,142,856,213" alt="30" onclick="requestAmbulance(30)">
+                <area shape="rect" class="A1" coords="856,142,963,213" alt="31" onclick="requestAmbulance(31)">
+                <area shape="rect" class="A1" coords="963,142,1070,213" alt="32" onclick="requestAmbulance(32)">
+                <area shape="rect" class="A1" coords="1070,142,1177,213" alt="33" onclick="requestAmbulance(33)">
+                <area shape="rect" class="A1" coords="0,213,107,284" alt="34" onclick="requestAmbulance(34)">
+                <area shape="rect" class="A1" coords="107,213,214,284" alt="35" onclick="requestAmbulance(35)">
+                <area shape="rect" class="A1" coords="214,213,321,284" alt="36" onclick="requestAmbulance(36)">
+                <area shape="rect" class="A1" coords="321,213,428,284" alt="37" onclick="requestAmbulance(37)">
+                <area shape="rect" class="A1" coords="428,213,535,284" alt="38" onclick="requestAmbulance(38)">
+                <area shape="rect" class="A1" coords="535,213,642,284" alt="39" onclick="requestAmbulance(39)">
+                <area shape="rect" class="A1" coords="642,213,749,284" alt="40" onclick="requestAmbulance(40)">
+                <area shape="rect" class="A1" coords="749,213,856,284" alt="41" onclick="requestAmbulance(41)">
+                <area shape="rect" class="A1" coords="856,213,963,284" alt="42" onclick="requestAmbulance(42)">
+                <area shape="rect" class="A1" coords="963,213,1070,284" alt="43" onclick="requestAmbulance(43)">
+                <area shape="rect" class="A1" coords="1070,213,1177,284" alt="44" onclick="requestAmbulance(44)">
+                <area shape="rect" class="A1" coords="0,284,107,355" alt="45" onclick="requestAmbulance(45)">
+                <area shape="rect" class="A1" coords="107,284,214,355" alt="46" onclick="requestAmbulance(46)">
+                <area shape="rect" class="A1" coords="214,284,321,355" alt="47" onclick="requestAmbulance(47)">
+                <area shape="rect" class="A1" coords="321,284,428,355" alt="48" onclick="requestAmbulance(48)">
+                <area shape="rect" class="A1" coords="428,284,535,355" alt="49" onclick="requestAmbulance(49)">
+                <area shape="rect" class="A1" coords="535,284,642,355" alt="50" onclick="requestAmbulance(50)">
+                <area shape="rect" class="A1" coords="642,284,749,355" alt="51" onclick="requestAmbulance(51)">
+                <area shape="rect" class="A1" coords="749,284,856,355" alt="52" onclick="requestAmbulance(52)">
+                <area shape="rect" class="A1" coords="856,284,963,355" alt="53" onclick="requestAmbulance(53)">
+                <area shape="rect" class="A1" coords="963,284,1070,355" alt="54" onclick="requestAmbulance(54)">
+                <area shape="rect" class="A1" coords="1070,284,1177,355" alt="55" onclick="requestAmbulance(55)">
+                <area shape="rect" class="A1" coords="0,355,107,426" alt="56" onclick="requestAmbulance(56)">
+                <area shape="rect" class="A1" coords="107,355,214,426" alt="57" onclick="requestAmbulance(57)">
+                <area shape="rect" class="A1" coords="214,355,321,426" alt="58" onclick="requestAmbulance(58)">
+                <area shape="rect" class="A1" coords="321,355,428,426" alt="59" onclick="requestAmbulance(59)">
+                <area shape="rect" class="A1" coords="428,355,535,426" alt="60" onclick="requestAmbulance(60)">
+                <area shape="rect" class="A1" coords="535,355,642,426" alt="61" onclick="requestAmbulance(61)">
+                <area shape="rect" class="A1" coords="642,355,749,426" alt="62" onclick="requestAmbulance(62)">
+                <area shape="rect" class="A1" coords="749,355,856,426" alt="63" onclick="requestAmbulance(63)">
+                <area shape="rect" class="A1" coords="856,355,963,426" alt="64" onclick="requestAmbulance(64)">
+                <area shape="rect" class="A1" coords="963,355,1070,426" alt="65" onclick="requestAmbulance(65)">
+                <area shape="rect" class="A1" coords="1070,355,1177,426" alt="66" onclick="requestAmbulance(66)">
+                <area shape="rect" class="A1" coords="0,426,107,497" alt="67" onclick="requestAmbulance(67)">
+                <area shape="rect" class="A1" coords="107,426,214,497" alt="68" onclick="requestAmbulance(68)">
+                <area shape="rect" class="A1" coords="214,426,321,497" alt="69" onclick="requestAmbulance(69)">
+                <area shape="rect" class="A1" coords="321,426,428,497" alt="70" onclick="requestAmbulance(70)">
+                <area shape="rect" class="A1" coords="428,426,535,497" alt="71" onclick="requestAmbulance(71)">
+                <area shape="rect" class="A1" coords="535,426,642,497" alt="72" onclick="requestAmbulance(72)">
+                <area shape="rect" class="A1" coords="642,426,749,497" alt="73" onclick="requestAmbulance(73)">
+                <area shape="rect" class="A1" coords="749,426,856,497" alt="74" onclick="requestAmbulance(74)">
+                <area shape="rect" class="A1" coords="856,426,963,497" alt="75" onclick="requestAmbulance(75)">
+                <area shape="rect" class="A1" coords="963,426,1070,497" alt="76" onclick="requestAmbulance(76)">
+                <area shape="rect" class="A1" coords="1070,426,1177,497" alt="77" onclick="requestAmbulance(77)">
+                <area shape="rect" class="A1" coords="0,497,107,568" alt="78" onclick="requestAmbulance(78)">
+                <area shape="rect" class="A1" coords="107,497,214,568" alt="79" onclick="requestAmbulance(79)">
+                <area shape="rect" class="A1" coords="214,497,321,568" alt="80" onclick="requestAmbulance(80)">
+                <area shape="rect" class="A1" coords="321,497,428,568" alt="81" onclick="requestAmbulance(81)">
+                <area shape="rect" class="A1" coords="428,497,535,568" alt="82" onclick="requestAmbulance(82)">
+                <area shape="rect" class="A1" coords="535,497,642,568" alt="83" onclick="requestAmbulance(83)">
+                <area shape="rect" class="A1" coords="642,497,749,568" alt="84" onclick="requestAmbulance(84)">
+                <area shape="rect" class="A1" coords="749,497,856,568" alt="85" onclick="requestAmbulance(85)">
+                <area shape="rect" class="A1" coords="856,497,963,568" alt="86" onclick="requestAmbulance(86)">
+                <area shape="rect" class="A1" coords="963,497,1070,568" alt="87" onclick="requestAmbulance(87)">
+                <area shape="rect" class="A1" coords="1070,497,1177,568" alt="88" onclick="requestAmbulance(88)">
+                <area shape="rect" class="A1" coords="0,568,107,639" alt="89" onclick="requestAmbulance(89)">
+                <area shape="rect" class="A1" coords="107,568,214,639" alt="90" onclick="requestAmbulance(90)">
+                <area shape="rect" class="A1" coords="214,568,321,639" alt="91" onclick="requestAmbulance(91)">
+                <area shape="rect" class="A1" coords="321,568,428,639" alt="92" onclick="requestAmbulance(92)">
+                <area shape="rect" class="A1" coords="428,568,535,639" alt="93" onclick="requestAmbulance(93)">
+                <area shape="rect" class="A1" coords="535,568,642,639" alt="94" onclick="requestAmbulance(94)">
+                <area shape="rect" class="A1" coords="642,568,749,639" alt="95" onclick="requestAmbulance(95)">
+                <area shape="rect" class="A1" coords="749,568,856,639" alt="96" onclick="requestAmbulance(96)">
+            </map>
+            <div id="requestDetails">
+                <!-- Request details will be displayed here -->
+            </div>
+        </div>
+        <div class="section2" id="cardBody">
+
+            <!-- <div class="card">
+
+            <div>
+                <img src="img.png" alt="ambulance">
+            </div>
+
+            <div>
+                <div class="vl">
+                    <p>a</p>
+                </div>
+
+                <div class="vl">
+                    <p>b</p>
+                </div>
+            </div>
+            <div>
+                <h2>your location</h2>
+                <p>time,distance</p>
+            </div>
+         </div> -->
+
+        </div>
+    </div>
+
+
+    <div class="sideBar">
+        <canvas id="myChart" style="width:100%;width:500px"></canvas>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Hospital Available At Node </th>
+                    <th>Hospital name</th>
+                    <th>Ambulance Available</th>
+                </tr>
+                <tr>
+                    <td>59</td>
+                    <td>Command Hospita</td>
+                    <td id="59"> </td>
+                </tr>
+                <tr>
+                    <td>53</td>
+                    <td>Landmark Hospital</td>
+                    <td id="53"></td>
+                </tr>
+                <tr>
+                    <td>49</td>
+                    <td>Harmony Hospital</td>
+                    <td id="49"></td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>Healing Hospital- Best Super Speciality Hospital in Chandigarh</td>
+                    <td id="41"></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Santokh Hospital</td>
+                    <td id="16"></td>
+                </tr>
+                <tr>
+                    <td>67</td>
+                    <td>Eden Critical Care Hospital</td>
+                    <td id="67"></td>
+                </tr>
+                <tr>
+                    <td>58</td>
+                    <td>Dhawan Hospital</td>
+                    <td id="58"></td>
+                </tr>
+                <tr>
+                    <td>96</td>
+                    <td>Alchemist Hospital Panchkula</td>
+                    <td id="96"></td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Max Super Specialty Hospital</td>
+                    <td id="25"></td>
+                </tr>
+                <tr>
+                    <td>74</td>
+                    <td>Park Hospital</td>
+                    <td id="74"></td>
+                </tr>
+                <tr>
+                    <td>51</td>
+                    <td>IVY Hospital Mohali</td>
+                    <td id="51"></td>
+                </tr>
+                <tr>
+                    <td>63</td>
+                    <td>Fortis Hospital Mohali</td>
+                    <td id="63"></td>
+                </tr>
+            </table>
+        </div>
+        <canvas id="occupancyOfRoads" style="width:100%;width:500px"></canvas>
+    </div>
+
+
+    <script src="maad.js"></script>
+    <!-- <script src="chart.js"></script> -->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+        </script>
+    <script>
+        // const img = getelementById("myImg")
+        // const marker = document.getelementById('#marker')
+        $(document).click(function (ev) {
+            $(".marker").remove();
+            $("body").append(
+                $('<div class="marker"> <img src="marker.png" alt="Image preview..."></div>').css({
+                    position: 'absolute',
+                    top: ev.pageY + 'px',
+                    left: ev.pageX + 'px',
+                    // width: '10px',
+                    // height: '10px',
+                    // background: '#000000'
+                })
+            );
+        });
+
+    </script>
+</body>
+
+</html>
